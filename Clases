@@ -1,0 +1,332 @@
+
+# Clase Curso
+
+class Curso:
+    def __init__(self, fecha_comienzo, titulo, descripcion, objetivos, programa, costo, duracion_meses, foto, estado, categoria):
+        self.__fecha_comienzo = fecha_comienzo
+        self.__titulo = titulo
+        self.__descripcion = descripcion
+        self.__objetivos = objetivos
+        self.__programa = programa
+        self.__costo = costo
+        self.__duracion_meses = duracion_meses
+        self.__foto = foto
+        self.__estado = estado
+        self.__categoria = categoria
+        self.__clases = []
+
+    def agregar_clase(self, fecha, titulo, contenido, URLDrive):
+        clase = Clase(fecha, titulo, contenido, URLDrive)
+        self.__clases.append(clase)
+
+    # Getter y Setter de Curso
+
+    def get_fecha_comienzo(self):
+        return self.__fecha_comienzo
+
+    def set_fecha_comienzo(self, fecha_comienzo):
+        self.__fecha_comienzo = fecha_comienzo
+
+    def get_titulo(self):
+        return self.__titulo
+
+    def set_titulo(self, titulo):
+        self.__titulo = titulo
+
+    def get_ descripcion (self):
+        return self.__ descripcion
+
+    def set_ descripcion (self, descripcion):
+        self.__ descripcion = descripcion
+
+    def get_ objetivos (self):
+        return self.__ objetivos
+
+    def set_ objetivos (self, objetivos):
+        self.__ objetivos = objetivos
+
+    def get_ programa (self):
+        return self.__ programa
+
+    def set_ programa (self, programa):
+        self.__ programa = programa
+
+    def get_ costo (self):
+        return self.__ costo
+
+    def set_ costo (self, costo):
+        self.__ costo = costo
+
+    def get_ duracion_meses (self):
+        return self.__ costo
+
+    def set_ duracion_meses (self, duracion_meses):
+        self.__ duracion_meses = duracion_meses
+
+    def get_ foto (self):
+        return self.__ foto
+
+    def set_ foto (self, foto):
+        self.__ foto = foto
+
+    def get_ estado (self):
+        return self.__ estado
+
+    def set_ estado (self, estado):
+        self.__ estado = estado
+
+    def get_ categoria (self):
+        return self.__ categoria
+
+    def set_ categoria (self, categoria):
+        self.__ categoria = categoria
+
+# Clase Clase
+
+class Clase:
+    def __init__(self, fecha, titulo, contenido, URLDrive):
+        self.__fecha = fecha
+        self.__titulo = titulo
+        self.__contenido = contenido
+        self.__URLDrive = URLDrive
+
+    # Getter y Setter de Clase
+
+    def get_fecha(self):
+        return self.__fecha
+
+    def set_fecha(self, fecha):
+        self.__fecha = fecha
+
+    def get_titulo(self):
+        return self.__titulo
+
+    def set_titulo(self, titulo):
+        self.__titulo = titulo
+
+    def get_ contenido (self):
+        return self.__ contenido
+
+    def set_ contenido (self, contenido):
+        self.__ contenido = contenido
+
+    def get_ URLDrive (self):
+        return self.__ URLDrive
+
+    def set_ URLDrive (self, URLDrive):
+        self.__ URLDrive = URLDrive
+
+# Clase Docente
+
+class Docente:
+    def __init__(self, apellido, nombre, dni, fecha_nacimiento, direccion, localidad, codigo_postal, provincia, telefono_celular, email):
+        self.__apellido = apellido
+        self.__nombre = nombre
+        self.__dni = dni
+        self.__fecha_nacimiento = fecha_nacimiento
+        self.__direccion = direccion
+        self.__localidad = localidad
+        self.__codigo_postal = codigo_postal
+        self.__provincia = provincia
+        self.__telefono_celular = telefono_celular
+        self.__email = email
+
+    # Getter y Setter de Docente
+
+    def get_apellido(self):
+        return self.__apellido
+
+    def set_apellido(self, apellido):
+        self.__apellido = apellido
+
+    def get_nombre(self):
+        return self.__nombre
+
+    def set_nombre(self, nombre):
+        self.__nombre = nombre
+
+    def get_ dni (self):
+        return self.__ dni
+
+    def set_ dni (self, dni):
+        self.__ dni = dni
+
+    def get_ fecha_nacimiento (self):
+        return self.__ fecha_nacimiento
+
+    def set_ fecha_nacimiento (self, fecha_nacimiento):
+        self.__ fecha_nacimiento = fecha_nacimiento
+
+    def get_ direccion (self):
+        return self.__ direccion
+
+    def set_ direccion (self, direccion):
+        self.__ direccion = direccion
+
+    def get_ localidad (self):
+        return self.__ localidad
+
+    def set_ localidad (self, localidad):
+        self.__ localidad = localidad
+
+    def get_ codigo_postal (self):
+        return self.__ codigo_postal
+
+    def set_ codigo_postal (self, codigo_postal):
+        self.__ codigo_postal = codigo_postal
+
+    def get_ provincia (self):
+        return self.__ provincia
+
+    def set_ provincia (self, provincia):
+        self.__ provincia = provincia
+
+    def get_ telefono_celular (self):
+        return self.__ telefono_celular
+
+    def set_ telefono_celular (self, provincia):
+        self.__ telefono_celular = telefono_celular
+
+    def get_ email (self):
+        return self.__ email
+
+    def set_ email (self, email):
+        self.__ email = email
+
+# Clase Usuario
+
+class Usuario:
+    def __init__(self, nombre, apellido, dni, direccion, fecha_nacimiento, localidad, codigo_postal, provincia, telefono_celular, email, clave):
+        self.__nombre = nombre
+        self.__apellido = apellido
+        self.__dni = dni
+        self.__direccion = direccion
+        self.__fecha_nacimiento = fecha_nacimiento
+        self.__localidad = localidad
+        self.__codigo_postal = codigo_postal
+        self.__provincia = provincia
+        self.__telefono_celular = telefono_celular
+        self.__email = email
+        self.__clave = clave
+        self.__activo = False
+
+    # Getter y Setter de Usuario
+
+    def get_nombre(self):
+        return self.__nombre
+
+    def set_nombre(self, nombre):
+        self.__nombre = nombre
+
+    def get_apellido(self):
+        return self.__apellido
+
+    def set_apellido(self, apellido):
+        self.__apellido = apellido
+
+    def get_ dni (self):
+        return self.__ dni
+
+    def set_ dni (self, dni):
+        self.__ dni = dni
+
+    def get_ direccion (self):
+        return self.__ direccion
+
+    def set_ direccion (self, direccion):
+        self.__ direccion = direccion
+
+    def get_ fecha_nacimiento (self):
+        return self.__ fecha_nacimiento
+
+    def set_ fecha_nacimiento (self, fecha_nacimiento):
+        self.__ fecha_nacimiento = fecha_nacimiento
+
+    def get_ localidad (self):
+        return self.__ localidad
+
+    def set_ localidad (self, localidad):
+        self.__ localidad = localidad
+
+    def get_ codigo_postal (self):
+        return self.__ codigo_postal
+
+    def set_ codigo_postal (self, codigo_postal):
+        self.__ codigo_postal = codigo_postal
+
+    def get_ provincia (self):
+        return self.__ provincia
+
+    def set_ provincia (self, provincia):
+        self.__ provincia = provincia
+
+    def get_ telefono_celular (self):
+        return self.__ telefono_celular
+
+    def set_ telefono_celular (self, telefono_celular):
+        self.__ telefono_celular = telefono_celular
+
+    def get_ email (self):
+        return self.__ email
+
+    def set_ email (self, email):
+        self.__ email = email
+
+    def get_ clave (self):
+        return self.__ clave
+
+    def set_ clave (self, clave):
+        self.__ clave = clave
+
+# Clase CarritoDeCompras
+
+class CarritoDeCompras:
+    def __init__(self):
+        self.__items = []
+
+    def agregar_item(self, curso):
+        self.__items.append(curso)
+
+    # Propiedades Getter y Setter
+    def get_items(self):
+        return self.__items
+
+    def set_items(self, items):
+        self.__items = items
+
+
+
+    def confirmar_compra(self, medio_pago):
+        if len(self.__items) == 0:
+            print("El carrito de compras está vacío. Agregue cursos antes de confirmar la compra.")
+            return
+        
+        monto_total = sum(curso.get_costo() for curso in self.__items)
+        fecha_compra = "Fecha de compra"  # Reemplazar con la fecha actual
+        usuario_compra = "Usuario de prueba"  # Reemplazar con el usuario actual
+
+        print("Resumen de la compra:")
+        for curso in self.__items:
+            print(f"- Curso: {curso.get_titulo()}, Costo: {curso.get_costo()}")
+        print(f"Medio de pago seleccionado: {medio_pago}")
+        print(f"Fecha de compra: {fecha_compra}")
+        print(f"Total a pagar: {monto_total}")
+
+
+
+    # Crear un usuario
+    usuario1 = Usuario("NombreUsuario", "ApellidoUsuario", "87654321", "DirecciónUsuario", "01/01/1990", "LocalidadUsuario", "1234", "ProvinciaUsuario", "1234567890", "usuario@example.com", "clave")
+
+    # Activar la cuenta del usuario
+    usuario1.activar_cuenta()
+
+    # Agregar cursos al carrito de compras
+    carrito = CarritoDeCompras()
+    carrito.agregar_item(curso1)
+
+    # Confirmar la compra
+    carrito.confirmar_compra("Tarjeta de crédito")
+
+
+
+
